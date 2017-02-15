@@ -6,7 +6,7 @@ package generics;
  * @param <T
  *            extends IBanana> - Type for the data
  */
-public class Node<T extends IBanana> {
+public class Node<T extends Comparable<T>> {
 
 	private Node<T> left;
 	private Node<T> right;
@@ -33,7 +33,7 @@ public class Node<T extends IBanana> {
 	 * @return data.getBanana()
 	 */
 	public String getDataBanana() {
-		return data.getBanana();
+		return data.toString();
 	}
 
 	/**
